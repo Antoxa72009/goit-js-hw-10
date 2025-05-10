@@ -31,7 +31,7 @@ const options = {
       startBtn.disabled = true; // Блокуємо кнопку, якщо дата в минулому
     } else {
       startBtn.disabled = false; // Розблоковуємо кнопку, якщо дата в майбутньому
-      userSelectedDate = selectedDate; // Зберігаємо вибрану дату
+      userSelectedDate = selectedDate; 
     }
   },
 };

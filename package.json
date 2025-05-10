@@ -1,11 +1,12 @@
 {
   "name": "vanilla-app-template",
   "private": true,
+  "homepage": "https://github.com/Antoxa72009/goit-js-hw-10/",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-js-hw-10/",
+    "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
