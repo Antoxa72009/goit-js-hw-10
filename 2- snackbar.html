@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Generator</title>
+    <!-- Підключення бібліотеки iziToast -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+    <style>
+      .form {
+        max-width: 300px;
+        margin-left: 20px;
+      }
+
+      .form label,
+      .form fieldset {
+        display: block;
+        margin-bottom: 16px;
+      }
+
+      .form input[type='number'] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+
+      .form fieldset {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4px 8px; /* Зменшено padding */
+      }
+
+      .form fieldset legend {
+        font-size: 14px;
+        margin-bottom: 4px;
+        padding: 0 4px; /* Мінімальний padding */
+      }
+
+      .form fieldset label {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 14px;
+      }
+
+      button[type='submit'] {
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+    </style>
+    <script type="module" crossorigin src="/2- snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  </head>
+  <body>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
+
+    <!-- Підключення скрипта -->
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+  </body>
+</html>
